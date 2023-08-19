@@ -1,19 +1,19 @@
 @font-face {
     font-family: "Lakes";
-    src: url(/font/AnyConv.com__TTLakes-Regular.woff2),
-    url(/font/TTLakes-Regular.woff);
+    src: url(font/AnyConv.com__TTLakes-Regular.woff2),
+    url(font/TTLakes-Regular.woff);
     font-weight: 400;
 }
 @font-face {
     font-family: "Lakes";
-    src: url(/font/TTLakes-Bold.woff2),
-    url(/font/TTLakes-Bold.woff);
+    src: url(font/TTLakes-Bold.woff2),
+    url(font/TTLakes-Bold.woff);
     font-weight: 700;
 }
 @font-face {
     font-family: "Lakes";
-    src: url(/font/TTLakes-Medium.woff2),
-    url(/font/TTLakes-Medium.woff);
+    src: url(font/TTLakes-Medium.woff2),
+    url(font/TTLakes-Medium.woff);
     font-weight: 500;
 }
 body{
