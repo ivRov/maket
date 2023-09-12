@@ -1,0 +1,288 @@
+@font-face {
+    font-family: "Lakes";
+    src: url(font/AnyConv.com__TTLakes-Regular.woff2),
+    url(font/TTLakes-Regular.woff);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Lakes";
+    src: url(font/TTLakes-Bold.woff2),
+    url(font/TTLakes-Bold.woff);
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Lakes";
+    src: url(font/TTLakes-Medium.woff2),
+    url(font/TTLakes-Medium.woff);
+    font-weight: 500;
+}
+body{
+    margin: 0;
+    margin-left: 16px;
+    padding:0;
+    background-color: #F8F8F8;
+    font-family:Lakes;
+}
+.header{
+    margin-left: -16px;
+}
+.header__menu{
+    height:87px;
+    margin: 0;
+    padding: 0;
+}
+.menu {
+    display: flex;
+    background-color: #fff;
+    list-style: none;
+}
+
+.menu__item{
+margin:auto;
+}
+.logo{
+    padding-right: 20px;
+}
+.logo::after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 32px;
+    border-radius: 1px;
+    background: #EAEAEA;
+    margin-top: 12px;
+    margin-inline: 5%;
+}
+.hidden{
+    display: none;
+}
+
+.side-bar__header-block{
+    display: flex; 
+}
+.highlight{
+    height: 40px;
+    margin-block: auto;
+    margin-left: -16px;
+    padding-right: 16px;
+}
+.side-bar__header{
+    font-weight: 700;
+    font-size: 28px;
+}
+.side-bar__nav{
+    display: flex;
+    overflow-x: scroll;
+}
+.side-bar__item{
+    text-decoration: none;
+    color: #7E7E82;
+    white-space: nowrap;
+    padding: 8px 16px;
+}
+
+.side-bar--active {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+.main {
+    margin-top:24px
+}
+
+.about-us{
+    margin-right:16px;
+    letter-spacing: 0.2px;
+    line-height: 18px;
+    font-size: 14px;
+    height: 90px;
+    overflow: hidden;
+}
+.btn-expand {
+    border: none;
+    background-color: #F8F8F8;
+    height: 24px;
+}
+.text-expand{
+    margin-left: 8px;
+    vertical-align: 5px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.main__right{
+    margin-left: -16px;
+    margin-block:16px;
+    min-width: 300px;
+}
+.main-logo{
+    width: 100%;
+}
+.mobile-menu{
+    width: 320px;
+    background-color: white;
+    margin: -32px;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+}
+.mobile-menu__header{
+    padding-top: 23px;
+    margin-left: -16px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    
+}
+.mobile-menu__logo{
+    margin-left: -40px;
+}
+.mobile-menu__list{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.mobile-menu__item{
+    margin-top: 32px;
+    font-weight: 500;
+    transition: .8s;
+}
+
+
+.item_highlight:hover::before{
+    content: "";
+    position: absolute;
+    left:0;
+    border-radius: 0 50% 50% 0;
+    background:#41F6D7;
+    width: 4px;
+    height: 32px;
+    
+}
+.mobile-menu__item:hover{
+    opacity: 0.6;
+}
+.mobile-menu__contacts{
+    margin-top: 279px;
+    padding: 0;
+    margin-left: 16px; 
+}
+
+.menu__contact{
+    margin-left:16px ;
+}
+.mobile-menu__info{
+    margin-left: 46px;
+}
+.mobile-menu__number{
+    font-weight: 700;
+    font-size: 24px;
+}
+.lang__btn{
+    border: none;
+    background-color: white;
+    font-weight: 500;
+    font-size: 16px;
+}
+.ru{
+    margin-left: 40px;
+    opacity: 0.6;
+}
+@media(min-width:768px){
+    .hidden{
+        display: block;
+    }
+    
+    .main{
+        display: flex;
+    }
+    .logo::after{
+        display: none;
+    }
+    .logo::before{
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 32px;
+        border-radius: 1px;
+        background: #EAEAEA;
+        margin-top: 12px;
+        margin-left: -3%;
+    }
+    .logo{padding-right: 240px;
+    padding-left: 20px;}
+    .profile{
+        padding-right: 20px;
+    }
+    .profile::after{
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 32px;
+        border-radius: 1px;
+        background: #EAEAEA;
+        margin-top: 5px;
+        margin-left: 3%;
+    }
+    .about-us{
+    line-height: 20px; 
+    letter-spacing: 0.2px;
+    height: 160px;
+    padding-inline: 24px;
+    }
+    .main__left{
+        width: 49%;
+    }
+    .main__right{
+        width: 45%;
+    }
+    .main-logo{
+        margin-inline:24px;
+        border-radius: 3%;
+    }
+    .side-bar__header{
+        margin-left: 12px;
+    }
+    .side-bar__header{
+        margin-left: 16px;
+    }
+    .side-bar__nav {
+        margin-left: 16px;
+    }
+    
+}
+
+@media(min-width:1120px){
+    .header__menu{
+        background-color: #F8F8F8;
+        position: absolute;
+        right: 5%;
+    }
+    .item:not(:nth-child(8),:nth-child(7)){
+        display: none;
+    }
+    .item{
+        margin-left: 32px;
+    }
+    .repair,
+    .check-status{
+        text-decoration: none;
+    }
+    .repair::before{
+        content: "Оставить заявку";
+        color: #1B1C21;
+        font-weight: 500;
+        vertical-align:15px;
+        margin-right: 10px;
+    }
+    .check-status::before{
+        content: "Статус ремонта";
+        color: #1B1C21;
+        font-weight: 500;
+        vertical-align:15px;
+        margin-right: 10px;
+    }
+    .side-bar__nav{
+        flex-wrap: wrap;
+        margin-left: 16px;
+        overflow-x: hidden;
+    }
+    .side-bar{
+        margin-top: 42px;
+    }
+   
+}
